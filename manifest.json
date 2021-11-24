@@ -1,0 +1,14 @@
+{
+  "description": "Filters the subscriptions videos you see depending on keywords.",
+  "manifest_version": 2,
+  "name": "SubscriptionFilter",
+  "version": "1.0",
+  "homepage_url": "",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/feed/subscriptions"],
+      "js": ["filter.js"]
+    }
+  ]
+}
